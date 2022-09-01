@@ -18,8 +18,11 @@ for _ in range(word_length):
     display += "_"
 
 while not game_is_finished:
+    
+
     guess = input("Guess a letter: ").lower()
     os.system('CLS')
+    
     
     
     if guess in display:
@@ -39,12 +42,12 @@ while not game_is_finished:
         lives -= 1
         
         if lives == 0:
+            print(stages[lives])
             game_is_finished = True
             print("You lose. Word was", )
             print("do you want to know what was the answer?")
             a = input("Y or N?").lower()
             if a == "y":
-                time.sleep(3)
                 print("The answer is", chosen_word)
             time.sleep(10)
         
@@ -52,7 +55,7 @@ while not game_is_finished:
         game_is_finished = True
         print(print("Congrats! You have guessed the word correctly!"))
     print("guessed letter is ", guessed_letter)
-    
-
-
     print(stages[lives])
+
+
+    
