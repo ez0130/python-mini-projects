@@ -44,9 +44,8 @@ while not game_is_finished:
             print("do you want to know what was the answer?")
             a = input("Y or N?").lower()
             if a == "y":
-                print(" u don't get to know :P")
                 time.sleep(3)
-                print("just kidding, the answer is", chosen_word)
+                print("The answer is", chosen_word)
             time.sleep(10)
         
     if not "_" in display:
